@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'antd';
+import { Card, Button } from 'antd';
 const { Meta } = Card;
 export const CardAnd = ({ id, image, title, total, onClick}) => (
   <Card
