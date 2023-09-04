@@ -3,6 +3,11 @@ import { HeaderPartial } from "./partials/HeaderPartial/HeaderPartial";
 import { Col, Row } from 'antd';
 
 function App() {
+
+  const handleClick = () => {
+         console.log('clicou');
+  };
+
   return (
     <div className="App">
       <HeaderPartial />
@@ -10,7 +15,7 @@ function App() {
 
       <Row gutter={16}>
       <Col className="gutter-row" span={4}>
-        <div><CardAnd col title="Matemática" image="https://picsum.photos/200/300?53" /></div>
+        <div><CardAnd onClick={handleClick} col title="Matemática" image="https://picsum.photos/200/300?53" /></div>
       </Col>
       <Col className="gutter-row" span={4}>
         <div><CardAnd title="Português" image="https://picsum.photos/200/300?52" /></div>

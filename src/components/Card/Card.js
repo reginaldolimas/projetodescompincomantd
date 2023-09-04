@@ -9,9 +9,9 @@ export const CardAnd = ({ id, image, title, total, onClick }) => (
         }}
         cover={<img alt="example" src={image} />}
     >
-        <Space align="center" style={{display: "flex", justifyContent: "space-between"}}>
+        <Space className="card" align="center" style={{display: "flex", justifyContent: "space-between"}}>
             <Meta title={title} description="" />
-            <Button type="primary">Salvar</Button>
+            <Button type="primary" onClick={onClick} >Salvar</Button>
         </Space>
 
     </Card>
