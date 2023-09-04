@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { CardAnd } from "./components/Card/Card";
+import { HeaderPartial } from "./partials/HeaderPartial/HeaderPartial";
+import { Col, Row } from 'antd';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeaderPartial />
+      <br></br>
+
+      <Row gutter={16}>
+      <Col className="gutter-row" span={4}>
+        <div><CardAnd col title="Matemática" image="https://picsum.photos/200/300?53" /></div>
+      </Col>
+      <Col className="gutter-row" span={4}>
+        <div><CardAnd title="Português" image="https://picsum.photos/200/300?52" /></div>
+      </Col>
+      <Col className="gutter-row" span={4}>
+        <div><CardAnd title="JavaScript" image="https://picsum.photos/200/300?51" /></div>
+      </Col>
+      <Col className="gutter-row" span={4}>
+        <div><CardAnd title="Java" image="https://picsum.photos/200/300?55" /></div>
+      </Col>
+      <Col className="gutter-row" span={4}>
+        <div><CardAnd title="Java" image="https://picsum.photos/200/300?56" /></div>
+      </Col>
+      <Col className="gutter-row" span={4}>
+        <div><CardAnd title="Java" image="https://picsum.photos/200/300?57" /></div>
+      </Col>
+    </Row>
+
     </div>
   );
 }
