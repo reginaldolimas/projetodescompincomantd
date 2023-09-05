@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, ModalAntd } from 'antd';
-e const App = () => {
+export const App = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     setIsModalOpen(true);
