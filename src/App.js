@@ -5,24 +5,23 @@ import {
 } from "react-router-dom";
 
 import { HeaderPartial } from "./partials/HeaderPartial/HeaderPartial";
+import { Homepage } from "./pages/Homepage/Homepage";
+import { MinhasPastasPage } from "./pages/Minhaspastas/MinhasPastasPage"
 
 
 function App() {
 
-  const handleClick = () => {
-         console.log('clicou');
-  };
-
   return (
-    <div className="App">
-      <HeaderPartial />
-      <br></br>
-      <Routes>
-        <Route parth="/" element={<HomePage />} />
-      </Routes>
-
-
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <HeaderPartial />
+        <br></br>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="minhas-pastas" element={<MinhasPastasPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
