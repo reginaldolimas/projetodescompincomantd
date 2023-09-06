@@ -22,7 +22,7 @@ export const CardAnd = ({ id, image, title, total, onClick }) => (
         >
         <Space className="card" align="center" style={{ display: "flex", justifyContent: "space-between" }}>
             <Meta title={title} description="" />
-            <Button type="primary" onClick={onClick}>Salvar<Badge count={0} showZero></Badge></Button>
+            <Button type="primary" onClick={onClick}><span style={{ marginRight: '8px'}}>Salvar</span><Badge style={{ marginLeft: 'auto', marginRight: '8px' }} count={0} showZero></Badge></Button>
          </Space>
          </ConfigProvider>
 
