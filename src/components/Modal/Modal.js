@@ -1,26 +1,18 @@
-import React, { useState } from 'react';
-import { Button, ModalAntd } from 'antd';
-export const App = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
+import React from 'react';
+import { Modal as ModalAntd } from 'antd';
+export const Modal = ({ title, children, open, controls = [], onHide}) => {
   const handleOk = () => {
-    setIsModalOpen(false);
+    console.log('clicou');
   };
+
   const handleCancel = () => {
-    setIsModalOpen(false);
-  };
-  return (
-    <>
-      <Button type="primary" onClick={showModal}>
-        Open Modal
-      </Button>
-      <ModalAntd title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+    console.log('cancelou');
+  }
+    return (
+        <ModalAntd title={title} open={open} onOk={handleOk} onCancel={handleCancel}>
         <p>Some contents...</p>
         <p>Some contents...</p>
         <p>Some contents...</p>
       </ModalAntd>
-    </>
   );
 };
