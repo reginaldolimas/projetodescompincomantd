@@ -6,10 +6,10 @@ export const Homepage = () => {
 
     return (
         <>
-        <Modal />
+        <Modal open={false} />
         <Row gutter={16}>
             <Col className="gutter-row" span={4}>
-                <div><CardAnd onClick={()=>{console.log('clicou')}} col title="Matemática" image="https://picsum.photos/200/300?53" /></div>
+                <div><CardAnd title="Matemática" image="https://picsum.photos/200/300?53" /></div>
             </Col>
             <Col className="gutter-row" span={4}>
                 <div><CardAnd title="Português" image="https://picsum.photos/200/300?52" /></div>
