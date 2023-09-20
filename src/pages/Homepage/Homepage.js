@@ -8,23 +8,14 @@ export const Homepage = () => {
         <>
         <Modal open={false} />
         <Row gutter={16}>
-            <Col className="gutter-row" span={4}>
+            <Col className="gutter-row" offset={1} xs={24} sm={12} md={8} lg={6} xl={4}>
                 <div><CardAnd title="Matemática" image="https://picsum.photos/200/300?53" /></div>
             </Col>
-            <Col className="gutter-row" span={4}>
+            <Col className="gutter-row" offset={1} xs={24} sm={12} md={8} lg={6} xl={4}>
                 <div><CardAnd title="Português" image="https://picsum.photos/200/300?52" /></div>
             </Col>
-            <Col className="gutter-row" span={4}>
+            <Col className="gutter-row" offset={1} xs={24} sm={12} md={8} lg={6} xl={4}>
                 <div><CardAnd title="JavaScript" image="https://picsum.photos/200/300?51" /></div>
-            </Col>
-            <Col className="gutter-row" span={4}>
-                <div><CardAnd title="Java" image="https://picsum.photos/200/300?55" /></div>
-            </Col>
-            <Col className="gutter-row" span={4}>
-                <div><CardAnd title="Java" image="https://picsum.photos/200/300?56" /></div>
-            </Col>
-            <Col className="gutter-row" span={4}>
-                <div><CardAnd title="Java" image="https://picsum.photos/200/300?57" /></div>
             </Col>
         </Row>
         </>
