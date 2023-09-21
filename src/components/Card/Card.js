@@ -1,12 +1,18 @@
 import React from 'react';
 import { Card, Space, Badge, ConfigProvider } from 'antd';
 import { Button } from '../Button/Button';
+import { useAppContext } from '../../store/AppContext';
+import { openModalSavePinAction } from '../../store/actions';
 const { Meta } = Card;
 
+
 export const CardAnd = ({ id, image, title, total }) => {
+  const { state, dispatch } = useAppContext();
 
   const handleClick = () => {
     console.log('ola mundo');
+    dispatch(openModalSavePinAction());
+    console.log(state)
   };
 
   return(  
