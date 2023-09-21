@@ -1,11 +1,12 @@
 import * as types from './types';
 /* import * as pinService from '../services/pinService'; */
 
-const sleep = (time) => (
+/* const sleep = (time) => (
     new Promise(resolve => {
         setTimeout(resolve, time)
     })
-); //Congela aplicação por um determinado tempo...
+);  */
+//Congela aplicação por um determinado tempo...
 
 export const openModalSavePinAction = (pinId) => ({
     type: types.openModalSavePinType,
