@@ -6,7 +6,7 @@ import * as types from './types';
         setTimeout(resolve, time)
     })
 );  */
-//Congela aplicação por um determinado tempo...asdfasdf
+//Congela aplicação por um determinado tempo...asdfasdfg
 
 export const openModalSavePinAction = (pinId) => ({
     type: types.openModalSavePinType,
